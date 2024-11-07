@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Rich cuisine</title>
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgba(0, 0, 0, 0.7) url(https://img.freepik.com/free-photo/top-view-chicken-pizza-with-yellow-cherry-tomatoes-bell-pepper-board_141793-3972.jpg?t=st=1730979313~exp=1730982913~hmac=cfa362dfb367b0efc690d4b85dd083d85c9c893a8e3cdf570c8f20f871ffcc8a&w=1380) center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    height: 180vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container h1{
+    color: orangered;
+    margin-left: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 4px;
+    transition: 3.5s;
+    margin-right: 100px;
+}
+
+.navbar ul li a:hover{
+    box-shadow: 0 3px 50px orangered inset,0 3px 50px orangered inset,
+    0 3px 50px orangered inset,0 3px 50px orangered inset;
+}
+
+.navbar .reservation{
+    padding: 8px;
+    background-color: orangered;
+}
+
+.contant{
+   
+    position: absolute;
+    color: #fff;
+    top: 40%;
+    left: 30%;
+}
+
+.contant h3{
+    
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 35%;
+}
+
+.contant h1{
+    margin-left:50px ;
+    font-size: 50px;
+}
+
+.contant p{
+   
+    
+    margin-top: 17px;
+}
+
+.search{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 42%;
+}
+
+.search input{
+    outline: none;
+    border: none;
+    padding: 12px 40px;
+    size: 1em;
+    width: 100%;
+}
+
+.submit{
+    position: absolute;
+    margin-top: 29%;
+    margin-left: 48%;
+}
+
+.submit a{
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 25px;
+    background-color: orangered;
+}
+.table1{
+       
+        width: 100%;
+        height: 80vh;
+        
+      }
+      .table2{
+        border: 2px solid rgb(251, 251, 251);
+        margin-top: 85vh;
+        margin-left: 3vw;
+          display: inline-block;
+          width: 28%;  
+      }
+      .table3{
+        margin-top: 15vh;
+        margin-left: 3vw;
+        border: 2px solid rgb(255, 255, 255);
+        display: inline-block;
+        width: 28%;
+      }
+      .table4{
+        margin-top: 15vh;
+        margin-left: 3vw;
+        border: 2px solid rgb(255, 249, 249);
+        display: inline-block;
+        width: 28%;
+      }
+     
+      .table2:hover>img{
+        position: relative;
+        margin-left: 7.3vw;
+        margin-top:-8vh ;
+        transition: 0.8s;
+      }
+      .table2:hover>h1{
+        transition: 0.8s;
+        position: relative;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+      }
+      .table2:hover>p{
+        transition: 0.8s;
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+      }
+      .table3:hover>img{
+        position: relative;
+        margin-left: 7.3vw;
+        margin-top:-8vh ;
+        transition: 0.8s;
+      }
+      .table3:hover>h1{
+        transition: 0.8s;
+        position: relative;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+      }
+      .table3:hover>p{
+        transition: 0.8s;
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+      }
+      .table4:hover>img{
+        position: relative;
+        margin-left: 7.3vw;
+        margin-top:-8vh ;
+        transition: 0.8s;
+      }
+      .table4:hover>h1{
+        transition: 0.8s;
+        position: relative;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+      }
+      .table4:hover>p{
+        transition: 0.8s;
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        color: rgb(246, 237, 255);
+      }
+      .lobby{
+       
+        width: 100%;
+        height: 18vh;
+      }
+      .slider{
+         display: inline-block;
+         margin-top: 65vh;
+        
+      }
+      .lider{
+        display: inline-block;
+       
+      }
+      .slider>h1{
+        text-decoration: underline;
+        display: inline-block;
+        margin-left: 8vw;
+        color: yellow;
+        font-size: 30px;
+        
+      }
+     
+      .slider>p{
+        text-decoration: underline;
+        display: inline-block;
+        color: rgb(15, 128, 185);
+        font-size: 30px;
+        margin-left: 10vw;
+        margin-top: -90px;
+      }
+      .lider>h1{
+        text-decoration: underline;
+        margin-left: 10vw;
+        display: inline-block;
+           color: aquamarine;
+           font-size: 30px;
+      }
+      .lider>h3{
+        text-decoration: underline;
+        margin-left: 10vw;
+        display: inline-block;
+        color: burlywood;
+        font-size: 30px;
+        margin-top: -5vh;
+      }
+        </style>
+        </head>
+        <body>
+           <div class="container">
+               <h1>Rich cuisine</h1>
+              <div class="navbar">
+                  <ul>
+                      <li><a class="HOME" href="a">HOME</a></li>
+                       <li><a class="ABOUT" href="a">ABOUT</a></li>
+                        <li><a class="MENU" href="a">MENU</a></li>
+                         <li><a class="GALLERY" href="a">GALLERY</a></li>
+                          <li><a class="TEAM" href="a">TEAM</a></li>
+                           <li><a class="CONTACT" href="a">CONTACT</a></li>
+                            <li><a class="RESERVATION" href="a">RESERVATION</a></li>
+                  </ul>
+                  <hr>
+              </div>
+              <div class="contant">
+                <h3>welcome to rich cuisine</h3>
+                <h1>Rich Healthy And Natural Food</h1>
+                <p>rich cuisine is a restuarent located in abc we have some amazing recipes and the most talented chefs in the country</p>
+                
+              </div>
+           </div>
+           <div class="search">
+               <input type="text" placeholder="search Food">
+               
+           </div>
+           
+           <div class="submit">
+               <a href="#">submit</a>
+               
+           </div>
+           <div class="table1">
+            <div class="table2">
+                <img src="https://img.freepik.com/free-photo/top-view-chicken-pizza-with-yellow-cherry-tomatoes-bell-pepper-board_141793-3971.jpg?t=st=1730992961~exp=1730996561~hmac=2fca96f46cfdcb55cd6d1fe963ed62dfd2c935f11c3739a56364c7b99fd6bf00&w=740"width="250vw" height="190vh">
+                <h1>pizza</h1>
+                <p> adipisicing elit. Possimus nihil laudantium pariatur aspernatur tempora exercitationem laborum voluptates repellat id incidunt!Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure enim natus unde nihil architecto perspiciatis molestias magni maiores dolores iusto!</p>
+            </div>
+            <div class="table3">
+                <img src="https://img.freepik.com/free-photo/exploding-burger-with-vegetables-melted-cheese-black-background-generative-ai_157027-1751.jpg?t=st=1730992817~exp=1730996417~hmac=a9ccf80af4b4b18a8868e38add5c9b2e378c95a074b196918d62f5518e063fc4&w=740"width="250vw" height="190vh">
+                <h1>burger</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis sit similique tenetur sapiente voluptatibus, nostrum officia delectus. Quas, quia minus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugit quae corporis, nulla enim illum non! Dolore optio quaerat obcaecati.</p>
+             </div>
+             <div class="table4">
+                <img src="https://img.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19744.jpg?t=st=1730992870~exp=1730996470~hmac=f9c63ac1681ea57afaa7241aac4a72be01caadf0216d06b0464fdf0bd1c1824c&w=740"width="250vw" height="190vh">
+                <h1>pasta</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto eum id animi voluptatum dolorem voluptas placeat. Magnam tenetur officiis minus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eos id reiciendis incidunt provident officia et ducimus unde, quis minus?</p>
+              </div>
+         </div>
+         <div class="lobby">
+            <div class="slider">
+                <h1>contact info</h1>
+                <p>023-654-765-1</p>
+            </div>
+            <div class="lider">
+                <h1>learn more</h1>
+                <h3>whatshapp..>></h3>
+            </div>
+        </div>
+        </body>
+        </html>
